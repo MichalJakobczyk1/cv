@@ -1,8 +1,14 @@
 .projects {
   &__heading {
+    @include bigHeaderMobile;
+    color: #234361;
   }
   &__paragraph {
+    @include textMobile;
+    color: #425A70;
   }
   &__tile {
+    background: url("/src/assets/img/console.png");
+    font-family: 'Roboto Mono', monospace;
   }
 }

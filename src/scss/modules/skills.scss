@@ -2,22 +2,20 @@
   background: #1070ca;
   padding: 64px 16px 96px;
   &__heading {
-    font: 700 36px;
-    line-height: 48px;
-    text-align: center;
+    @include bigHeaderMobile;
   }
+  &-section{
   &__emoji {
     font-size: 64px;
     line-height: 72px;
     text-align: center;
   }
   &__description {
-    font: 700 24px;
-    line-height: 44px;
-    text-align: center;
+    @include smallHeaderMobile;
   }
   &__list {
     @include textMobile;
+    text-align: left;
     &-item {
       margin-bottom: 24px;
     }
@@ -31,4 +29,5 @@
       list-style-type: disc;
     }
   }
+}
 }
