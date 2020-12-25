@@ -1,18 +1,34 @@
 .skills {
+  background: #1070ca;
+  padding: 64px 16px 96px;
   &__heading {
+    font: 700 36px;
+    line-height: 48px;
+    text-align: center;
   }
   &__emoji {
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
   }
   &__description {
+    font: 700 24px;
+    line-height: 44px;
+    text-align: center;
   }
   &__list {
+    @include textMobile;
     &-item {
+      margin-bottom: 24px;
     }
     &--working-knowledge {
+      list-style-image: url("/src/assets/img/small-tick.svg");
     }
     &--know-something-about {
+      list-style-image: url("/src/assets/img/small-tick-transparent.svg");
     }
     &--want-to-learn {
+      list-style-type: disc;
     }
   }
 }

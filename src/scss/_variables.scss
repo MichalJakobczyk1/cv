@@ -14,3 +14,25 @@
   justify-content: center;
   align-items: center;
 }
+@mixin bigHeaderMobile {
+ font: 700 36px;
+ line-height: 48px;
+ text-align: center;
+}
+@mixin smallHeaderMobile {
+  font: 700 26x;
+  line-height: 32px;
+  text-align: center;
+ }
+ @mixin textMobile {
+   font: 300 16px;
+   line-height: 32px;
+ }
+ @mixin textMobileBold {
+  font: 700 16px;
+  line-height: 32px;
+ }
+ @mixin consoleMobile {
+   font: 400 13px;
+   line-height: 24px;
+ }
