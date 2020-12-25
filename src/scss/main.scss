@@ -1,9 +1,18 @@
 @import "~normalize.css";
 @import "_variables";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:wght@400;700&display=swap");
+@import "modules/about.scss";
+@import "modules/skills.scss";
+@import "modules/projects.scss";
+@import "modules/contact.scss";
 // font-family: 'Nunito', sans-serif;
 // font-family: 'Roboto Mono', monospace;
-body {
+
+// @mixin{
+//   mailstyle
+// }
+
+.body {
   background: $wtf;
   color: #fff;
   display: flex;
@@ -11,3 +20,7 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+
+.main {
+}
+
