@@ -1,1 +1,16 @@
-$wtf: #2D2241;
+@mixin mail {
+  background: #4da8ff;
+  border-radius: 64px;
+  font: 700 20px Nunito;
+  line-height: 40px;
+  color: #fff;
+  padding: 4px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

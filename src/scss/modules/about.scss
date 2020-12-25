@@ -1,16 +1,37 @@
 .about {
+  font-family: "Nunito", sans-serif;
+  padding: 88px 16px;
   &__image-container {
+    @include center
   }
   &__image {
+    background: url("/src/assets/img/hero.jpg") center center / cover no-repeat;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
   }
   &__hello {
+    display: none;
   }
   &__heading {
+    text-align: center;
+    color: #234361;
+    font: 700 26px;
+    &--color {
+      color: #1070CA;
+    }
   }
   &__paragraph {
+    text-align: center;
+    font: 300 16px;
+    line-height: 32px;
+    color: #425A70;
   }
   &__link {
+    font-weight: 700;
+    color: #4DA8FF;
   }
   &__mail {
+    @include mail
   }
 }

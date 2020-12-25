@@ -8,12 +8,12 @@
 // font-family: 'Nunito', sans-serif;
 // font-family: 'Roboto Mono', monospace;
 
-// @mixin{
-//   mailstyle
-// }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .body {
-  background: $wtf;
   color: #fff;
   display: flex;
   align-items: center;
