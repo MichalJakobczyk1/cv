@@ -1,7 +1,8 @@
 @mixin mail {
   background: #4da8ff;
   border-radius: 64px;
-  font: 700 20px Nunito;
+  font-size: 20px;
+  font-weight: 700;
   line-height: 40px;
   color: #fff;
   padding: 4px 24px;
@@ -15,25 +16,33 @@
   align-items: center;
 }
 @mixin bigHeaderMobile {
- font: 700 36px;
+ font-size: 36px;
+ font-weight: 700;
  line-height: 48px;
  text-align: center;
 }
 @mixin smallHeaderMobile {
-  font: 700 26x;
+  font-weight: 700;
+  font-size: 26px;
   line-height: 32px;
   text-align: center;
  }
  @mixin textMobile {
    font: 300 16px;
+   font-size: 16px;
+   font-weight: 300;
    line-height: 32px;
    text-align: center;
  }
  @mixin textMobileBold {
   font: 700 16px;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 32px;
  }
  @mixin consoleMobile {
    font: 400 13px;
+   font-size: 13px;
+   font-weight: 400;
    line-height: 24px;
  }

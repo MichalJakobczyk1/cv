@@ -1,16 +1,41 @@
 .contact {
+  background: #dbeaf7;
+  padding: 64px 16px;
   &__heading {
+    @include bigHeaderMobile;
+    color: #234361;
   }
   &__paragraph {
+    @include textMobile;
+    color: #425a70;
   }
-  &__social {
-    &--github {
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 64px 48px;
+    &__link {
     }
-    &--instagram {
+    &__image {
     }
-    &--facebook {
+    &__social {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      -webkit-box-shadow: -5px 0px 10px -10px #000000;
+      box-shadow: -5px 0px 10px -10px #000000;
+      &--github {
+      }
+      &--instagram {
+      }
+      &--facebook {
+      }
     }
   }
   &__mail {
+    @include mail;
   }
 }
