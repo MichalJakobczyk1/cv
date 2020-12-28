@@ -1,13 +1,28 @@
 .projects {
   padding: 48px 16px;
+  @media (min-width: $desktop) {
+    padding: 80px 128px 176px;
+  }
+  &__content {
+    @media (min-width: $desktop) {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  }
   &__heading {
     @include bigHeaderMobile;
     color: #234361;
+    @media (min-width: $desktop) {
+      @include bigHeaderDesktop;
+    }
   }
   &__paragraph {
     @include textMobile;
     color: #425a70;
     margin-bottom: 48px;
+    @media (min-width: $desktop) {
+      @include textDesktop;
+    }
   }
   &-grid {
     display: grid;
@@ -26,10 +41,16 @@
   overflow: hidden;
   color: #a3a3a3;
   @include consoleMobile;
+  @media (min-width: $desktop) {
+    @include consoleDesktop;
+  }
   &__title {
     @include consoleMobile;
     color: #fff;
     font-weight: 700;
+    @media (min-width: $desktop) {
+      @include consoleDesktop;
+    }
   }
   &__window {
     height: 40px;
