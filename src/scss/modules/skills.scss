@@ -3,31 +3,38 @@
   padding: 64px 16px 96px;
   &__heading {
     @include bigHeaderMobile;
-  }
-  &-section{
-  &__emoji {
-    font-size: 64px;
-    line-height: 72px;
     text-align: center;
   }
-  &__description {
-    @include smallHeaderMobile;
-  }
-  &__list {
-    @include textMobile;
-    text-align: left;
-    &-item {
-      margin-bottom: 24px;
-    }
-    &--working-knowledge {
-      list-style-image: url("/src/assets/img/small-tick.svg");
-    }
-    &--know-something-about {
-      list-style-image: url("/src/assets/img/small-tick-transparent.svg");
-    }
-    &--want-to-learn {
-      list-style-type: disc;
+  &__grid {
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-evenly;
     }
   }
-}
+  &-section {
+    &__emoji {
+      font-size: 64px;
+      line-height: 72px;
+      text-align: center;
+    }
+    &__description {
+      @include smallHeaderMobile;
+    }
+    &__list {
+      @include textMobile;
+      text-align: left;
+      &-item {
+        margin-bottom: 24px;
+      }
+      &--working-knowledge {
+        list-style-image: url("/src/assets/img/small-tick.svg");
+      }
+      &--know-something-about {
+        list-style-image: url("/src/assets/img/small-tick-transparent.svg");
+      }
+      &--want-to-learn {
+        list-style-type: disc;
+      }
+    }
+  }
 }
