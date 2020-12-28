@@ -4,6 +4,9 @@
   &__heading {
     @include bigHeaderMobile;
     text-align: center;
+    @media (min-width: $desktop) {
+      @include bigHeaderDesktop;
+    }
   }
   &__grid {
     @media (min-width: $desktop) {
@@ -19,10 +22,17 @@
     }
     &__description {
       @include smallHeaderMobile;
+      @media (min-width: $desktop) {
+        @include smallHeaderDesktop;
+      }
     }
     &__list {
       @include textMobile;
       text-align: left;
+      @media (min-width: $desktop) {
+        @include textDesktop;
+        text-align: left;
+      }
       &-item {
         margin-bottom: 24px;
       }
