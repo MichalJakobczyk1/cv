@@ -26,6 +26,7 @@
   &__link {
     font-weight: 700;
     color: #4da8ff;
+    text-decoration: none;
   }
   &__mail {
     @include mail;

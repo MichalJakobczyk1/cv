@@ -1,14 +1,61 @@
 .projects {
+  padding: 48px 16px;
   &__heading {
     @include bigHeaderMobile;
     color: #234361;
   }
   &__paragraph {
     @include textMobile;
-    color: #425A70;
+    color: #425a70;
+    margin-bottom: 48px;
   }
-  &__tile {
-    background: url("/src/assets/img/console.png");
-    font-family: 'Roboto Mono', monospace;
+  &-grid {
+  }
+}
+.project {
+  background: #212528;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgb(0, 0, 0, 0.25);
+  overflow: hidden;
+  color: #a3a3a3;
+  @include consoleMobile;
+  &__title {
+    @include consoleMobile;
+    color: #fff;
+    font-weight: 700;
+  }
+  &__window {
+    height: 40px;
+    background: #1e1e1e;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+  }
+  &__circle {
+    background: #464a4d;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 8px;
+  }
+  &__content {
+    padding: 24px 16px;
+    color: #808082;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    column-gap: 8px;
+  }
+  &__label {
+    display: block;
+    text-align: right;
+    color: #808082;
+    font-weight: normal;
+  }
+  &__link {
+    color: #14b5d0;
   }
 }

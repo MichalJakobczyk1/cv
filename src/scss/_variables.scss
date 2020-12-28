@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 @mixin center {
   display: flex;
@@ -28,21 +29,18 @@
   text-align: center;
  }
  @mixin textMobile {
-   font: 300 16px;
    font-size: 16px;
    font-weight: 300;
    line-height: 32px;
    text-align: center;
  }
  @mixin textMobileBold {
-  font: 700 16px;
   font-size: 16px;
   font-weight: 700;
   line-height: 32px;
  }
  @mixin consoleMobile {
-   font: 400 13px;
    font-size: 13px;
-   font-weight: 400;
+   font-weight: normal;
    line-height: 24px;
  }

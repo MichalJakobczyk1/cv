@@ -6,9 +6,14 @@
 @import "modules/projects.scss";
 @import "modules/contact.scss";
 
-a {
-  text-decoration: none;
-  color: inherit;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
 }
 
 .body {
@@ -20,6 +25,5 @@ a {
 }
 
 .main {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
-
