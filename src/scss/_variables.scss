@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 960px;
+
 @mixin mail {
   background: #4da8ff;
   border-radius: 64px;
@@ -10,6 +13,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  width: 278px;
 }
 @mixin center {
   display: flex;
@@ -17,30 +21,59 @@
   align-items: center;
 }
 @mixin bigHeaderMobile {
- font-size: 36px;
- font-weight: 700;
- line-height: 48px;
- text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
 }
 @mixin smallHeaderMobile {
   font-weight: 700;
   font-size: 26px;
   line-height: 32px;
   text-align: center;
- }
- @mixin textMobile {
-   font-size: 16px;
-   font-weight: 300;
-   line-height: 32px;
-   text-align: center;
- }
- @mixin textMobileBold {
+}
+@mixin textMobile {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+}
+@mixin textMobileBold {
   font-size: 16px;
   font-weight: 700;
   line-height: 32px;
- }
- @mixin consoleMobile {
-   font-size: 13px;
-   font-weight: normal;
-   line-height: 24px;
- }
+}
+@mixin consoleMobile {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+@mixin bigHeaderDesktop {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+}
+@mixin smallHeaderDesktop {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+@mixin textDesktop {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+@mixin textDesktopBold {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+}
+@mixin consoleDesktop {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}

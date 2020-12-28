@@ -1,16 +1,53 @@
 .about {
-  padding: 88px 16px;
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  padding: 74px 16px 88px;
   &__image-container {
     @include center;
+    position: relative;
   }
   &__image {
-    background: url("/src/assets/img/hero.jpg") center center / cover no-repeat;
     width: 96px;
     height: 96px;
     border-radius: 50%;
+    border: 16px solid #f6f9fd;
+    @media (min-width: $tablet) {
+      width: 178px;
+      height: 178px;
+      border: 24px solid #f6f9fd;
+    }
+  }
+  &__bubble {
+    position: absolute;
+    top: -26px;
+    left: calc(50% + 90px);
   }
   &__hello {
     display: none;
+    @media (min-width: $tablet) {
+      @include center;
+      background: #1070ca;
+      border-radius: 16px;
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 700;
+      width: 230px;
+      height: 72px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 32px;
+        display: block;
+        width: 17.42px;
+        height: 22.66px;
+        background: url("/src/assets/img/speech-cloud.svg");
+      }
+    }
   }
   &__heading {
     @include smallHeaderMobile;
@@ -18,17 +55,49 @@
     &--color {
       color: #1070ca;
     }
+    @media (min-width: $desktop) {
+      @include smallHeaderDesktop;
+    }
+  }
+  &__content {
+    position: relative;
+    @media (min-width: $desktop) {
+      &::before {
+        content: "";
+        display: block;
+        width: 83.23px;
+        height: 254.88px;
+        background: url("/src/assets/img/{.svg");
+        position: absolute;
+        left: -15%;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 83.23px;
+        height: 254.88px;
+        background: url("/src/assets/img/}.svg");
+        position: absolute;
+        top: 0;
+        right: -15%;
+      }
+    }
   }
   &__paragraph {
     @include textMobile;
     color: #425a70;
+    @media (min-width: $desktop) {
+      @include textDesktop;
+    }
   }
   &__link {
     font-weight: 700;
     color: #4da8ff;
-    text-decoration: none;
   }
   &__mail {
     @include mail;
+    &-container {
+      @include center;
+    }
   }
 }
