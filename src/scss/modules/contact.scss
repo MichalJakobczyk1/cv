@@ -4,10 +4,25 @@
   &__heading {
     @include bigHeaderMobile;
     color: #234361;
+    @media (min-width: $desktop) {
+      @include bigHeaderDesktop;
+    }
   }
   &__paragraph {
     @include textMobile;
     color: #425a70;
+    @media (min-width: $desktop) {
+      @include textDesktop;
+    }
+  }
+  &__content {
+    @media (min-width: $desktop) {
+      display: flex;
+      width: 580px;
+      height: 48px;
+      align-items: center;
+      margin: 164px auto 76px;
+    }
   }
   &-container {
     display: flex;
