@@ -6,6 +6,6 @@ Page made by me which represents my knowledge, skills & projects.
 
 ## Contact
 
-If you have any qustions just mail me at: michal.jakobczyk1@wp.pl
+If you have any questions just mail me at: michal.jakobczyk1@wp.pl
 
 
