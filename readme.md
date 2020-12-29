@@ -1,18 +1,11 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://michaljakobczyk1.github.io/cv/cv.png)
 
-# WTF Webpack Starter Kit 
+# My Frontend Curriculum Vitae
 
-Simple toolkit for your static websites development.
+Page made by me which represents my knowledge, skills & projects.
 
-## How to use it?
+## Contact
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+If you have any qustions just mail me at: michal.jakobczyk1@wp.pl
 
-## Available scripts
-
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
 
