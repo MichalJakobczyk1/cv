@@ -68,8 +68,11 @@
     margin-right: 8px;
   }
   &__content {
-    padding: 24px 16px;
+    padding: 18px 16px;
     color: #808082;
+    @media (min-width: $desktop) {
+      padding: 18px 48px 58px;
+    }
   }
   &__grid {
     display: grid;

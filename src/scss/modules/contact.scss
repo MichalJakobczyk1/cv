@@ -1,11 +1,15 @@
 .contact {
   background: #dbeaf7;
   padding: 64px 16px;
+  @media (min-width: $desktop) {
+    padding-top: 80px;
+  }
   &__heading {
     @include bigHeaderMobile;
     color: #234361;
     @media (min-width: $desktop) {
       @include bigHeaderDesktop;
+      margin-bottom: 40px;
     }
   }
   &__paragraph {

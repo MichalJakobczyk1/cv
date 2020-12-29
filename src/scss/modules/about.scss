@@ -1,10 +1,14 @@
 .about {
+  padding: 74px 16px 88px;
   @media (min-width: $tablet) {
-    max-width: 768px;
+    max-width: 878px;
     margin: 0 auto;
   }
-
-  padding: 74px 16px 88px;
+  @media (min-width: $desktop) {
+    max-width: 878px;
+    margin: 0 auto;
+    padding-bottom: 176px;
+  }
   &__image-container {
     @include center;
     position: relative;
@@ -14,10 +18,11 @@
     height: 96px;
     border-radius: 50%;
     border: 16px solid #f6f9fd;
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       width: 178px;
       height: 178px;
       border: 24px solid #f6f9fd;
+      margin-bottom: 48px;
     }
   }
   &__bubble {
@@ -45,7 +50,7 @@
         display: block;
         width: 17.42px;
         height: 22.66px;
-        background: url("/src/assets/img/speech-cloud.svg");
+        background: url("../assets/img/speech-cloud.svg");
       }
     }
   }
@@ -67,19 +72,19 @@
         display: block;
         width: 83.23px;
         height: 254.88px;
-        background: url("/src/assets/img/{.svg");
+        background: url("../assets/img/{.svg");
         position: absolute;
-        left: -15%;
+        left: -8%;
       }
       &::after {
         content: "";
         display: block;
         width: 83.23px;
         height: 254.88px;
-        background: url("/src/assets/img/}.svg");
+        background: url("../assets/img/}.svg");
         position: absolute;
         top: 0;
-        right: -15%;
+        right: -8%;
       }
     }
   }
@@ -98,6 +103,10 @@
     @include mail;
     &-container {
       @include center;
+      margin-top: 48px;
+      @media (min-width: $desktop) {
+        margin-top: 68px;
+      }
     }
   }
 }
