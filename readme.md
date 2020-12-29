@@ -1,4 +1,4 @@
-![cover](https://michaljakobczyk1.github.io/cv/cv.png)
+![cover](https://MichalJakobczyk1.github.io/cv/cv.png)
 
 # My Frontend Curriculum Vitae
 
