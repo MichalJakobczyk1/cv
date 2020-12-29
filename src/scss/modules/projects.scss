@@ -78,6 +78,9 @@
     display: grid;
     grid-template-columns: 102px 1fr;
     column-gap: 8px;
+    @media (min-width: $desktop) {
+      grid-template-columns: 116px 1fr;
+    }
   }
   &__label {
     display: block;
