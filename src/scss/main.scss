@@ -5,16 +5,8 @@
 @import "modules/skills.scss";
 @import "modules/projects.scss";
 @import "modules/contact.scss";
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*:after {
-  box-sizing: inherit;
-}
+@import "modules/styleReset.scss";
+@import "modules/hand.scss";
 
 .body {
   color: #fff;
@@ -28,3 +20,4 @@ html {
   font-family: "Nunito", sans-serif;
   width: 100%;
 }
+
