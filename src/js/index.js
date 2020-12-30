@@ -1,4 +1,5 @@
 import "../scss/main.scss";
+import {getElementY, doScrolling} from "./modules/scroll.js";
 
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
@@ -49,3 +50,11 @@ fetch("https://api.github.com/users/MichalJakobczyk1/repos?sort=created")
     }
   })
   .catch((e) => console.log(e));
+
+const skills = document.querySelector(".about__link--skills");
+const projects = document.querySelector(".about__link--projects");
+const contact = document.querySelector(".about__link--contact");
+
+skills.addEventListener("click", doScrolling.bind(null, "#skills", 1000));
+projects.addEventListener("click", doScrolling.bind(null, "#projects", 1250));
+contact.addEventListener("click", doScrolling.bind(null, "#contact", 1500));
