@@ -31,13 +31,13 @@ fetch("https://api.github.com/users/MichalJakobczyk1/repos?sort=created")
           <p class="project__grid">
             <span class="project__label">demo:</span
             ><span
-              >&lt;<a class="project__link" rel="noopener noreferrer" href="${homepage} title="${name} - demo" target="_blank">see here</a>&gt;</span
+              >&lt;<a class="project__link" rel="noopener noreferrer" href="${homepage}" title="${name} - demo" target="_blank">see here</a>&gt;</span
             >
           </p>
           <p class="project__grid">
             <span class="project__label">github:</span
             ><span
-              >&lt;<a class="project__link" rel="noopener noreferrer" href="${html_url} title="${name} - code" target="_blank">source code</a
+              >&lt;<a class="project__link" rel="noopener noreferrer" href="${html_url}" title="${name} - code" target="_blank">source code</a
               >&gt;</span
             >
           </p>
