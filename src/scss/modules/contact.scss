@@ -65,11 +65,11 @@
 }
 .favicon {
   @include textMobile;
+  color: #425a70;
+  @media (min-width: $desktop) {
+    @include textDesktop;
+  }
+  & a {
     color: #425a70;
-    @media (min-width: $desktop) {
-      @include textDesktop;
-    }
-    & a {
-      color: #425a70;
-    }
+  }
 }
