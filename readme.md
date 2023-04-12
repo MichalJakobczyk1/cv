@@ -12,6 +12,7 @@ Page made by me which represents my knowledge, skills & projects.
 - JS ES6 with API
 ## Contact
 
-If you have any questions just mail me at: michal.jakobczyk1@wp.pl
+If you have any questions just mail me at: michal.jakobczyk2@gmail.com
+
 
 
